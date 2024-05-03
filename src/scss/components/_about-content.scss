@@ -1,0 +1,32 @@
+.about-card {
+  display: flex;
+  margin-inline: auto;
+  justify-content: space-between;
+  padding: 30px;
+
+  background: rgba(0, 255, 255, 0.8);
+  border-radius: 35px;
+  width: 70%;
+  max-width: 850px;
+  height: 70vh;
+
+  @include tablet-small {
+    padding: 6px;
+  }
+}
+.about-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  p {
+    color: rgb(61, 4, 56);
+    font-size: 30px;
+    border: 1px solid black;
+    @include tablet-small {
+      font-size: 20px;
+    }
+  }
+  span {
+    color: rgb(105, 8, 184);
+  }
+}

@@ -1,0 +1,81 @@
+.home-card {
+  display: flex;
+  margin-inline: auto;
+  justify-content: space-between;
+  padding: 30px;
+
+  background: rgba(0, 255, 255, 0.8);
+  border-radius: 35px;
+  // width: 70%;
+  max-width: 850px;
+  height: 70vh;
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  @include tablet-small {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  p {
+    color: rgb(180, 55, 211);
+    font-size: 40px;
+    // border: 1px solid black;
+    @include tablet-small {
+      font-size: 35px;
+    }
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+  span {
+    color: purple;
+  }
+}
+
+.picture {
+  display: flex;
+  justify-content: center;
+  margin-left: 30px;
+
+  @include tablet {
+    max-width: 500px;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    margin-top: 20px;
+  }
+  img {
+    max-width: 100%;
+    @include tablet {
+      max-height: 500px;
+    }
+  }
+}
+.main-image {
+  border-radius: 50px;
+  // max-width: 300px;
+  object-fit: cover;
+  border: 2px solid purple;
+}
+.home-short-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  @include tablet-small {
+    gap: 10px;
+  }
+}
+.home-icons {
+  img {
+    max-width: 40px;
+    max-height: 40px;
+  }
+}
+#gulpIcon {
+  max-width: 50px;
+  max-height: 40px;
+  margin-left: 5px;
+}

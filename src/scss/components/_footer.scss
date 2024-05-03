@@ -1,0 +1,15 @@
+.footer {
+  color: blue;
+  background: rgba(151, 209, 219, 0.8);
+  margin-top: auto;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  img {
+    max-width: 30px;
+  }
+}

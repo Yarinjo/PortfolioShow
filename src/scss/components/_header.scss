@@ -1,0 +1,50 @@
+.header {
+  background: rgba(0, 255, 255, 0.3);
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  @include tablet-small {
+    padding: 10px;
+  }
+}
+.links {
+  display: flex;
+  margin-inline: auto;
+  justify-content: center;
+  gap: 30px;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  li a {
+    border: none;
+    padding: 10px 20px;
+    font-family: "Electrolize", sans-serif;
+    cursor: pointer;
+    font-size: 30px;
+    color: aqua;
+    border: 1px solid black;
+    display: flex;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s all ease-in-out;
+
+    &:hover {
+      background: rgb(85, 5, 65);
+    }
+
+    @include tablet {
+      font-size: 22px;
+      width: 100%;
+    }
+  }
+}
+li {
+  @include tablet {
+    width: 100%;
+  }
+}
