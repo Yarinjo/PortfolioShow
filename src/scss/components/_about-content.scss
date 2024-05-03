@@ -10,8 +10,12 @@
   max-width: 850px;
   height: 70vh;
 
+  @include tablet {
+    height: auto;
+  }
+
   @include tablet-small {
-    padding: 6px;
+    padding: 10px;
   }
 }
 .about-description {
@@ -21,7 +25,7 @@
   p {
     color: rgb(61, 4, 56);
     font-size: 30px;
-    border: 1px solid black;
+    // border: 1px solid black;
     @include tablet-small {
       font-size: 20px;
     }

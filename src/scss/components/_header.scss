@@ -13,10 +13,10 @@
   justify-content: center;
   gap: 30px;
 
-  @include mobile {
-    flex-direction: column;
+  @include tablet-small {
+    // flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 20px;
   }
 
   li a {
@@ -37,9 +37,11 @@
       background: rgb(85, 5, 65);
     }
 
-    @include tablet {
+    @include tablet-small {
       font-size: 22px;
       width: 100%;
+      font-size: 15px;
+      padding: 5px;
     }
   }
 }
